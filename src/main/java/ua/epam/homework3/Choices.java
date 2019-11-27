@@ -1,13 +1,13 @@
 package ua.epam.homework3;
 
-public enum CHOICES {
+public enum Choices {
     ROCK("Rock"),
     PAPER("Paper"),
     SCISSORS("Scissors");
 
     private String choice;
 
-    CHOICES(String choice) {
+    Choices(String choice) {
         this.choice = choice;
     }
 

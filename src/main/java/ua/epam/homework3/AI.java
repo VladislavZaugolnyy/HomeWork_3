@@ -9,13 +9,13 @@ public class AI {
         int randomInt = random.nextInt(3) + 1;
         String compChoice = "";
         if (randomInt == 1) {
-            compChoice = CHOICES.ROCK.getChoice();
+            compChoice = Choices.ROCK.getChoice();
             return compChoice;
         } else if (randomInt == 2) {
-            compChoice = CHOICES.PAPER.getChoice();
+            compChoice = Choices.PAPER.getChoice();
             return compChoice;
         } else if (randomInt == 3) {
-            compChoice = CHOICES.SCISSORS.getChoice();
+            compChoice = Choices.SCISSORS.getChoice();
             return compChoice;
         }
         return compChoice;

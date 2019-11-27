@@ -1,6 +1,6 @@
 package ua.epam.homework3;
 
-public enum MESSAGES {
+public enum Messages {
     INTRO("Hello! You are playing Rock, Paper, Scissors against AI."),
     WINNER("Congratulations! You are the winner! Skynet has fallen."),
     LOSER("AI won. Humanity is doomed because of you. Haven't you seen Terminator?"),
@@ -9,7 +9,7 @@ public enum MESSAGES {
     AI_CHOICE("AI picked ");
     private String message;
 
-    MESSAGES(String message) {
+    Messages(String message) {
         this.message = message;
     }
 

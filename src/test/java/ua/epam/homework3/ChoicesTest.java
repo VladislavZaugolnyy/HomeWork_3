@@ -7,16 +7,16 @@ import static org.junit.Assert.assertEquals;
 public class ChoicesTest {
     @Test
     public void shouldReturnRockStringByGetter() {
-        assertEquals("Rock", CHOICES.ROCK.getChoice());
+        assertEquals("Rock", Choices.ROCK.getChoice());
     }
 
     @Test
     public void shouldReturnPaperStringByGetter() {
-        assertEquals("Paper", CHOICES.PAPER.getChoice());
+        assertEquals("Paper", Choices.PAPER.getChoice());
     }
 
     @Test
     public void shouldReturnScissorsStringByGetter() {
-        assertEquals("Scissors", CHOICES.SCISSORS.getChoice());
+        assertEquals("Scissors", Choices.SCISSORS.getChoice());
     }
 }

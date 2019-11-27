@@ -13,27 +13,27 @@ public class GameLogic {
         String aiChoice = ai.computersChoice();
 
         if (playersChoice.equalsIgnoreCase("rock")) {
-            if (aiChoice.equals(CHOICES.PAPER.getChoice())) {
+            if (aiChoice.equals(Choices.PAPER.getChoice())) {
                 output.loser(aiChoice);
-            } else if (aiChoice.equals(CHOICES.SCISSORS.getChoice())) {
+            } else if (aiChoice.equals(Choices.SCISSORS.getChoice())) {
                 output.winner(aiChoice);
             } else if (playersChoice.equalsIgnoreCase(aiChoice)) {
                 output.draw(aiChoice);
                 runGameLogic();
             }
         } else if (playersChoice.equalsIgnoreCase("paper")) {
-            if (aiChoice.equals(CHOICES.ROCK.getChoice())) {
+            if (aiChoice.equals(Choices.ROCK.getChoice())) {
                 output.winner(aiChoice);
-            } else if (aiChoice.equals(CHOICES.SCISSORS.getChoice())) {
+            } else if (aiChoice.equals(Choices.SCISSORS.getChoice())) {
                 output.loser(aiChoice);
             } else {
                 output.draw(aiChoice);
                 runGameLogic();
             }
         } else if (playersChoice.equalsIgnoreCase("scissors")) {
-            if (aiChoice.equals(CHOICES.ROCK.getChoice())) {
+            if (aiChoice.equals(Choices.ROCK.getChoice())) {
                 output.loser(aiChoice);
-            } else if (aiChoice.equals(CHOICES.PAPER.getChoice())) {
+            } else if (aiChoice.equals(Choices.PAPER.getChoice())) {
                 output.winner(aiChoice);
             } else {
                 output.draw(aiChoice);
